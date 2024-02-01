@@ -1,62 +1,47 @@
-/* styles.css */
-
 body {
     margin: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0; /* Added background color */
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    background-image: url('sign\ up.jpg'); /* Replace 'background.jpg' with your image */
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
     padding: 20px;
-    margin: 20px; /* Added margin for better spacing */
-    border-radius: 10px;
-    background-color: #fff; /* Added background color for container */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Added box shadow */
+    border-radius: 60px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    text-align: center;
 }
 
-.controls {
-    display: flex;
-    flex-direction: row; /* Changed to row for horizontal alignment */
-    justify-content: flex-start; /* Align buttons to the left */
-    margin-bottom: 20px; /* Added margin for spacing between buttons and video */
+h1 {
+    color: #2c3e50;
 }
 
-.record-button {
-    font-size: 18px;
-    padding: 15px 25px;
-    margin: 10px;
-    background-color: #3498db;
+.form {
+    margin-top: 50px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #63db34;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.record-button:hover {
-    background-color: #2980b9;
-    transform: scale(1.05);
+a {
+    color: #e74c3c;
+    text-decoration: none;
 }
 
-.record-button:disabled {
-    background-color: #bdc3c7;
-    cursor: not-allowed;
-}
-
-.video-container {
-    max-width: 100%;
-    overflow: hidden;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Added box shadow for video container */
-}
-
-@media screen and (max-width: 600px) {
-    .record-button {
-        font-size: 16px;
-        padding: 10px 20px;
-    }
+a:hover {
+    text-decoration: underline;
 }

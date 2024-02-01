@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Decorative Sign Up/Login</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Authenti Check </h1>
+        <div id="loginSignupContainer" class="form">
+            <h2>Sign Up</h2>
+            <!-- <input type="text" id="name" placeholder="Full Name" required> -->
+            
+            
+            <input type="email" id="email" placeholder="Email" required>
+            <br>
+            <br>
+            <input type="password" id="password" placeholder="Password" required>
+            <br>
+            <br>
+            <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+            <br>
+            <br>
+            <button type="button" onclick="submitSignup()">Sign Up</button>
+            <br>
+            <br>
+            <p id="signupResult"></p>
+            <p>Already have an account? <a href="#" onclick="showLoginForm()">Login</a></p>
+        </div>
+
+        <div id="loginForm" class="form" style="display: none;">
+            <h2>Login</h2>
+            <input type="email" id="loginEmail" placeholder="Email" required>
+            <br>
+            <br>
+            <input type="password" id="loginPassword" placeholder="Password" required>
+            <br>
+            <br>
+            <button type="button" onclick="submitLogin()">Login</button>
+            <p id="loginResult"></p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
