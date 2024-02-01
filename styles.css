@@ -1,0 +1,62 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0; /* Added background color */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    margin: 20px; /* Added margin for better spacing */
+    border-radius: 10px;
+    background-color: #fff; /* Added background color for container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Added box shadow */
+}
+
+.controls {
+    display: flex;
+    flex-direction: row; /* Changed to row for horizontal alignment */
+    justify-content: flex-start; /* Align buttons to the left */
+    margin-bottom: 20px; /* Added margin for spacing between buttons and video */
+}
+
+.record-button {
+    font-size: 18px;
+    padding: 15px 25px;
+    margin: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.record-button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+.record-button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+.video-container {
+    max-width: 100%;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Added box shadow for video container */
+}
+
+@media screen and (max-width: 600px) {
+    .record-button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
